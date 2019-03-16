@@ -1,0 +1,24 @@
+
+security_groups:
+  - name: "dns"
+    rules:
+      - dst: "127.0.0.1"
+        dst_port: "53"
+        protocol: "udp"
+      - dst: "192.168.10.12"
+        dst_port: "53,63"
+        protocol: "udp"
+      - dst: "10.19.148.4"
+        dst_port: "53"
+        protocol: "udp"
+  - name: "ldap"
+    rules:
+      - dst: "10.19.148.4"
+        dst_port: "63,663"
+        protocol: "tcp"
+  - name: "mail"
+    rules:
+      - dst: "255.255.255.255"
+        dst_port: "25,687"
+        protocol: "tcp"
+  

@@ -1,0 +1,9 @@
+
+security_groups:
+  - name: dns
+    rules:
+      - dst: "127.0.0.1"
+        dst_port: "53"
+        logging: False
+        
+        
