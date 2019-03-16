@@ -1,0 +1,2 @@
+# pycass
+Python Cassandra sampler
